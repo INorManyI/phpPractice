@@ -1,0 +1,81 @@
+a {
+  color: #fff !important;
+  text-decoration: none
+}
+.neonText {
+  color: #fff;
+  text-shadow:
+      0 0 2px #fff,
+      0 0 6px #fff,
+      0 0 11px #fff,
+      0 0 20px #0d1224,
+      0 0 40px #0d1224,
+      0 0 45px #0d1224,
+      0 0 500px #0d1224,
+      0 0 75px #0d1224;
+}
+
+
+/* Additional styling */
+.container{
+    position:absolute;
+    top:12px;
+    right: 5px;
+}
+.container1{
+    position:absolute;
+    top:12px;
+    left: 5px;
+}
+
+h1{
+    margin-top:0px;
+    margin-right: 10px;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+body {
+    margin: 0;
+  background:#0d1224;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+
+#header {
+    height: 60px;
+    background:#257d0f;
+    border-bottom: 2px solid black;
+}
+#select{
+    margin: 10px;
+}
+#select th, #select td{
+        color: #fff;
+}
+p,h3{
+    color: #f0f0f0;
+}
+#main #table {
+    position:absolute;
+}
+#table th, #table td {
+    padding: 10px;
+}
+
+#table th {
+    background: #606060;
+    color: #fff;
+}
+
+#table td {
+    background: #b5b5b5;
+}
+#main #AddProduct{
+    position:absolute;
+    right: 10px;
+    top:70px;
+    text-align:right;
+}
+
