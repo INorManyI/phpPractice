@@ -1,1 +1,6 @@
 1683185999 | toyota | mark 2 | двигатель | 10 | 5
+1683189136 | subaru | impreza | logo | 2 | 1
+1684247607 | subaru | forester | подрамник | 1 | 1000
+1684425697 | mersedes | a1 | tt | 100 | 1
+1684466169 | subaru | forester | Госуслуги | 12 | 121
+1684466188 | subaru | forester | sdfdsf | 2423432 | 123214

@@ -4,8 +4,8 @@
 
 	require_once 'vendor/connect.php';
 
-	if($_SESSION['user'] and $_SESSION['user']['part'] != "admin") {
-		header('Location: /product.php');
+	if($_SESSION['information'] and $_SESSION['information']['accesslevel'] != "admin") {
+		header('Location: /fase.php');
 	} else {
 		$product_id = $_GET['id'];
 		$product = mysqli_query($connect, "SELECT * FROM `product` WHERE `id` = '$product_id'");

@@ -24,9 +24,16 @@
  	</div>
 
  	<div class="container1">
-    	<h1 class="neonText">
-          Окно Администратора
-    	</h1>
+ 		<?php if($_SESSION['information']['accesslevel'] === "admin") {?>
+    		<h1 class="neonText">
+          		Администратор
+    		</h1>
+    	<?php } else { ?>
+    		<h1 class="neonText">
+          		Пользователь
+    		</h1>
+
+    	<?php } ?>
  	</div>
 
 </div>
@@ -164,8 +171,36 @@
 		  } else {
 		 x.style.display = "none"}
 	    };
-  </script>
+  	</script>
 	</div>
+	<div id="AddNews">
+		<?php if($_SESSION['information']['accesslevel'] === "admin") { ?>
+		<button id="click" type="submit">Добавление Новости</button>
+		<div id="element">
+			<form action="vendor/createNews.php" method="post" enctype="multipart/form-data">
+					<p>Картинка:</p>
+					<input type="file" name="file">
+					<p>Тема:</p>
+					<input type="text" name="subject">
+					<p>Описание:</p>
+					<input type="text" name="description">
+					<br><br>
+					<button type="submit">Отправить</button>
+			</form>
+			<?php  } ?>
+		</div>
+	</div>
+	<script>
+	  	document.addEventListener("DOMContentLoaded", hiddenCloseclick());
+	  	document.getElementById('click').addEventListener("click", hiddenCloseclick);
+		function hiddenCloseclick() {
+		let x = document.getElementById('element');
+	      if (x.style.display == "none"){
+		  x.style.display = "block";
+		  } else {
+		 x.style.display = "none"}
+	    };
+  	</script>
 
 
 </div>

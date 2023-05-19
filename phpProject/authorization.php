@@ -1,7 +1,7 @@
 <?php
 	session_start();
-	if($_SESSION['user']) {
-		header('Location: /profile.php');
+	if($_SESSION['information']) {
+		header('Location: /product.php');
 	}
 ?>
 <!DOCTYPE html>

@@ -19,13 +19,13 @@ a {
 /* Additional styling */
 .container{
     position:absolute;
-    top:12px;
+    top:20px;
     right: 5px;
 }
 .container1{
     position:absolute;
-    top:12px;
-    left: 5px;
+    top:20px;
+    left: 10px;
 }
 
 h1{
@@ -34,6 +34,7 @@ h1{
   text-align: right;
   text-transform: uppercase;
   font-weight: 200;
+  font-size: 20px;
 }
 
 body {
@@ -50,6 +51,11 @@ body {
 }
 #select{
     margin: 10px;
+}
+#UpdateProduct{
+    position:absolute;
+    top:70px;
+    right: 10px;
 }
 #select th, #select td{
         color: #fff;
@@ -76,6 +82,11 @@ p,h3{
     position:absolute;
     right: 10px;
     top:70px;
+    text-align:right;
+}
+#main #AddNews {
+    right:10px;
+    position: absolute;
     text-align:right;
 }
 
